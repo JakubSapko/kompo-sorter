@@ -5,6 +5,8 @@ WIDTH = 800
 HEIGHT = 600
 POS_X = 300
 POS_Y = 200
+
+
 class MainApplication(tk.Frame):
     def __init__(self, parent, *args, **kwargs):
         tk.Frame.__init__(self, parent, *args, **kwargs)
@@ -16,7 +18,7 @@ class MainApplication(tk.Frame):
         self._setup_widgets()
 
     def _setup_size_and_positioning(self) -> None:
-        self.winfo_toplevel().title('File sorter')
+        self.winfo_toplevel().title("File sorter")
         self.winfo_toplevel().geometry(f"{WIDTH}x{HEIGHT}+{POS_X}+{POS_Y}")
         self.config(width=WIDTH, height=HEIGHT)
 
@@ -31,12 +33,10 @@ class MainApplication(tk.Frame):
         cfg.grid(row=0, column=0, sticky="nsew")
         cfg.config(bg="limegreen")
 
-        cfgx = ConfigCreator(self)
+        cfgx = tk.Frame(self)
         cfgx.grid(row=0, column=1, sticky="nsew")
         cfgx.config(bg="skyblue")
-    
 
-        
 
 if __name__ == "__main__":
     root = tk.Tk()
