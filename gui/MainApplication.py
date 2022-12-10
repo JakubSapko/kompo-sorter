@@ -9,23 +9,31 @@ class MainApplication(tk.Frame):
     def __init__(self, parent, *args, **kwargs):
         tk.Frame.__init__(self, parent, *args, **kwargs)
         # root
+        self.parent = parent
 
         self._setup_size_and_positioning()
+        self._setup_layout()
         self._setup_widgets()
-        self.cfg.pack(side="left", fill="both", expand=True)
-        self.cfgx.pack(side="right", fill="both", expand=True)
 
     def _setup_size_and_positioning(self) -> None:
-        self.winfo_toplevel().title('Test app')
+        self.winfo_toplevel().title('File sorter')
         self.winfo_toplevel().geometry(f"{WIDTH}x{HEIGHT}+{POS_X}+{POS_Y}")
         self.config(width=WIDTH, height=HEIGHT)
 
-    def _setup_widgets(self) -> None:
-        self.cfg = ConfigCreator(self)
-        self.cfg.config(bg="limegreen")
+    def _setup_layout(self) -> None:
+        self.grid(row=0, column=0)
+        self.columnconfigure(0, weight=2)
+        self.columnconfigure(1, weight=3)
+        self.rowconfigure(0, weight=1)
 
-        self.cfgx = ConfigCreator(self)
-        self.cfgx.config(bg="skyblue")
+    def _setup_widgets(self) -> None:
+        cfg = ConfigCreator(self)
+        cfg.grid(row=0, column=0, sticky="nsew")
+        cfg.config(bg="limegreen")
+
+        cfgx = ConfigCreator(self)
+        cfgx.grid(row=0, column=1, sticky="nsew")
+        cfgx.config(bg="skyblue")
     
 
         
