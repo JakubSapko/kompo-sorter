@@ -24,6 +24,7 @@ class ConfigCreator(tk.Frame):
 
         # Submit button setup
         submit_button: Button = Button(self, text="Submit")
+        a
         submit_button.grid(column=0, row=13, pady=(5, 5))
         
         # Config list setup
