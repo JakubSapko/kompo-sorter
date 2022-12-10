@@ -1,4 +1,4 @@
-from tkinter import Listbox, StringVar, Entry, Label, Button, filedialog
+from tkinter import Listbox, Radiobutton, StringVar, Entry, Label, Button, filedialog
 import tkinter as tk
 
 DEFAULT_PADDING_TOP = 15
@@ -90,6 +90,29 @@ class ConfigCreator(tk.Frame):
             column=0, row=21, pady=(DEFAULT_PADDING_TOP, DEFAULT_PADDING_BOTTOM)
         )
         # imported_config = filedialog.askopenfile()
+
+        # Other files
+        other_files_label: Label = Label(
+            self, text="What do you want to do with files with other extensions?"
+        )
+        other_files_label.grid(
+            column=0,
+            row=23,
+            padx=(DEFAULT_PADDING_LEFT, DEFAULT_PADDING_RIGHT),
+            pady=(DEFAULT_PADDING_TOP, DEFAULT_PADDING_BOTTOM),
+        )
+        self.other_files_option: StringVar = StringVar()
+        skip_option: Radiobutton = Radiobutton(
+            self, text="Skip the files", variable=self.other_files_option, value="skip"
+        )
+        skip_option.grid(column=0, row=24)
+        move_to_other_option: Radiobutton = Radiobutton(
+            self,
+            variable=self.other_files_option,
+            text='Move to "Other" directory on your Desktop',
+            value="Other",
+        )
+        move_to_other_option.grid(column=0, row=25)
 
     def import_config(self) -> None:
         filedialog.askopenfile()
