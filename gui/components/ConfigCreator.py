@@ -54,29 +54,11 @@ class ConfigCreator(tk.Frame):
         )
 
         # Config list setup
-        countrynames = (
-            "Argentina",
-            "Australia",
-            "Belgium",
-            "Brazil",
-            "Canada",
-            "China",
-            "Denmark",
-            "Finland",
-            "France",
-            "Greece",
-            "India",
-            "Italy",
-            "Japan",
-            "Mexico",
-            "Netherlands",
-            "Norway",
-            "Spain",
-            "Sweden",
-            "Switzerland",
-        )
-        cnames = StringVar(value=countrynames)
-        conifg_listbox: Listbox = Listbox(self, listvariable=cnames, height=6)
+        config_values = [
+            "Example: [.txt,.pdf,.doc]"
+        ]
+        cnames = StringVar(value=config_values)
+        conifg_listbox: Listbox = Listbox(self, listvariable=cnames, height=6, width=40)
         conifg_listbox.place(relx=0.5, rely=0.43, anchor=Anchor.CENTER.value)
 
         # Export config setup

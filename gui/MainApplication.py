@@ -1,7 +1,7 @@
 import tkinter as tk
 from components.ConfigCreator import ConfigCreator
 
-WIDTH = 800
+WIDTH = 600
 HEIGHT = 600
 POS_X = 300
 POS_Y = 200
@@ -31,10 +31,9 @@ class MainApplication(tk.Frame):
     def _setup_widgets(self) -> None:
         cfg = ConfigCreator(self)
         cfg.grid(row=0, column=0, columnspan=2, sticky="nsew")
-        cfg.config(bg="limegreen")
 
         run_btn = tk.Button(self, text="Run script")
-        run_btn.place(x = 130, y = 500, width=100, height=25)
+        run_btn.place(relx=0.425, rely=0.9)
 
 
 if __name__ == "__main__":
