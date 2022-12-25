@@ -30,12 +30,11 @@ class MainApplication(tk.Frame):
 
     def _setup_widgets(self) -> None:
         cfg = ConfigCreator(self)
-        cfg.grid(row=0, column=0, sticky="nsew")
+        cfg.grid(row=0, column=0, columnspan=2, sticky="nsew")
         cfg.config(bg="limegreen")
 
-        cfgx = tk.Frame(self)
-        cfgx.grid(row=0, column=1, sticky="nsew")
-        cfgx.config(bg="skyblue")
+        run_btn = tk.Button(self, text="Run script")
+        run_btn.place(x = 130, y = 500, width=100, height=25)
 
 
 if __name__ == "__main__":
