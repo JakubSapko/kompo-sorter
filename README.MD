@@ -24,7 +24,7 @@ Naszą propozycją projektu zaliczeniowego jest prosty program obsługujący sor
 # 
 
 TODO:
-- [ ] GUI
+- [x] GUI
 - [ ] Logowanie plików (logger)
 - [ ] Tworzenie, modyfikowanie, zapisywanie i wczytywanie gotowego configu
 - [ ] Sortowanie plików
