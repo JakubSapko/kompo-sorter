@@ -49,3 +49,7 @@ class Logger(metaclass=Singleton):
         now: datetime = datetime.now()
         handled_msg: str = f"|{type}|{now.hour}:{now.minute}|{msg}\n"
         return handled_msg
+    
+    def log_to_file(self, filename: str, msg: str) -> None:
+        with open(filename, 'a') as logfile:
+            logfile.write(msg)
