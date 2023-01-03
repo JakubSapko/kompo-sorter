@@ -2,10 +2,17 @@ import os
 import traceback
 import sys
 
+import argparse
+
 from typing import Optional, Type, Union
 from types import TracebackType
 
 from datetime import datetime
+
+parser = argparse.ArgumentParser()
+parser.add_argument('DEBUG', default=False, nargs='?')
+args = parser.parse_args()
+
 class Singleton(type):
     _instances = {}
     def __call__(cls, *args, **kwargs):
@@ -16,6 +23,8 @@ class Singleton(type):
 
 class Logger(metaclass=Singleton):
 
+    # Set this when executing a script using DEBUG=True
+    DEBUG = args.DEBUG
     PADDING = 9
     TYPE = {'debug': 'DEBUG',
             'log': 'INFO',
@@ -72,7 +81,12 @@ class Logger(metaclass=Singleton):
     def debug(self, msg: str) -> None:
         '''
         Debug logging method. Logs as DEBUG.
+        Debug logs should be only called in dev environment and left outside
+        of the production environment.
+        Enable debug by calling the script with DEBUG flag set to True
         '''
+        if not self.DEBUG:
+            raise Exception("You can't use debug logs without DEBUG mode set to True")
         log_type = sys._getframe().f_code.co_name
         self._base_log(log_type, msg)
 
@@ -86,6 +100,12 @@ class Logger(metaclass=Singleton):
     def object(self, obj: object) -> None:
         '''
         Object logging method. Logs as OBJECT.
+        Lifted up from log method as those things can get pretty long
+        when logged objects get advanced. Requires logged object to have
+        a __str__ representation.
         '''
-        log_type = sys._getframe().f_code.co_name
-        self._base_log(log_type, obj)
+        log_type: str = sys._getframe().f_code.co_name
+        obj_msg: str = f"\n--------------\n"\
+                        + str(obj)\
+                        + f"\n-----------"
+        self._base_log(log_type, obj_msg)
