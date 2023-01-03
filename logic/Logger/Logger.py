@@ -1,7 +1,7 @@
 import os
 import traceback
 
-from typing import Optional, Type
+from typing import Optional, Type, Union
 from types import TracebackType
 
 from datetime import datetime
@@ -37,6 +37,19 @@ class Logger(metaclass=Singleton):
             tb_msg = self._create_log_msg("traceback", " ".join(traceback.format_tb(exc_tb)))
             self.log_to_file(self._exceptions_file, tb_msg)
             
+    def _create_log_msg(self, type: str, msg: str) -> str:
+        type: str = self.TYPE[type].ljust(self.PADDING)
+        now: datetime = datetime.now()
+        handled_msg: str = f"|{type}|{now.hour}:{now.minute}|{msg}\n"
+        return handled_msg
+    
+    def _base_log(self, type: str, msg: str) -> Union[str, None]:
+        handled_msg: str = self._create_log_msg(type, msg)
+        if self._logfile:
+            self.log_to_file(self._logfile, handled_msg)
+            return
+        print(handled_msg)
+
     def create_logfile(self, logfile_name: str) -> str:
         if not os.path.isdir("./logs"):
             os.mkdir("./logs")
@@ -44,12 +57,6 @@ class Logger(metaclass=Singleton):
         open(logfile_path, 'a').close()
         return logfile_path
 
-    def _create_log_msg(self, type: str, msg: str) -> str:
-        type: str = self.TYPE[type].ljust(self.PADDING)
-        now: datetime = datetime.now()
-        handled_msg: str = f"|{type}|{now.hour}:{now.minute}|{msg}\n"
-        return handled_msg
-    
     def log_to_file(self, filename: str, msg: str) -> None:
         with open(filename, 'a') as logfile:
             logfile.write(msg)
