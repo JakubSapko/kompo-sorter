@@ -4,6 +4,7 @@ import traceback
 from typing import Optional, Type
 from types import TracebackType
 
+from datetime import datetime
 class Singleton(type):
     _instances = {}
     def __call__(cls, *args, **kwargs):
@@ -13,6 +14,13 @@ class Singleton(type):
         return cls._instances[cls]
 
 class Logger(metaclass=Singleton):
+
+    PADDING = 9
+    TYPE = {'debug': 'DEBUG',
+            'log': 'INFO',
+            'exception': 'EXCEPTION',
+            'object': 'OBJECT',
+            'traceback': 'TRACEBACK'}
 
     def __init__(self, logfile: str = None, exception_file: str = "errors") -> None:
         self._logfile = self.create_logfile(logfile) if logfile else None
@@ -36,4 +44,8 @@ class Logger(metaclass=Singleton):
         open(logfile_path, 'a').close()
         return logfile_path
 
-    
+    def _create_log_msg(self, type: str, msg: str) -> str:
+        type: str = self.TYPE[type].ljust(self.PADDING)
+        now: datetime = datetime.now()
+        handled_msg: str = f"|{type}|{now.hour}:{now.minute}|{msg}\n"
+        return handled_msg
