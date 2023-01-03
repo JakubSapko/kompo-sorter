@@ -1,5 +1,6 @@
 import os
 import traceback
+import sys
 
 from typing import Optional, Type, Union
 from types import TracebackType
@@ -60,3 +61,31 @@ class Logger(metaclass=Singleton):
     def log_to_file(self, filename: str, msg: str) -> None:
         with open(filename, 'a') as logfile:
             logfile.write(msg)
+    
+    def log(self, msg: str) -> None:
+        '''
+        Basic logging method. Logs as INFO.
+        '''
+        log_type = sys._getframe().f_code.co_name
+        self._base_log(log_type, msg)
+    
+    def debug(self, msg: str) -> None:
+        '''
+        Debug logging method. Logs as DEBUG.
+        '''
+        log_type = sys._getframe().f_code.co_name
+        self._base_log(log_type, msg)
+
+    def exception(self, msg: str) -> None:
+        '''
+        Exception logging method. Logs as EXCEPTION.
+        '''
+        log_type = sys._getframe().f_code.co_name
+        self._base_log(log_type, msg)
+    
+    def object(self, obj: object) -> None:
+        '''
+        Object logging method. Logs as OBJECT.
+        '''
+        log_type = sys._getframe().f_code.co_name
+        self._base_log(log_type, obj)
