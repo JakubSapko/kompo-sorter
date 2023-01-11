@@ -2,6 +2,10 @@ from enum import Enum
 from tkinter import Listbox, Radiobutton, StringVar, Entry, Label, Button, filedialog
 import tkinter as tk
 
+
+from logic.BaseComponent import BaseComponent
+from logic.Mediator import EVENTS
+
 DEFAULT_PADDING_TOP = 15
 DEFAULT_PADDING_BOTTOM = 5
 DEFAULT_PADDING_LEFT = 10
@@ -23,12 +27,11 @@ class Anchor(Enum):
     NORTHWEST = 'nw'
     CENTER = 'center'
 
-class ConfigCreator(tk.Frame):
+class ConfigCreator(tk.Frame, BaseComponent):
     def __init__(self, parent, *args, **kwargs):
         tk.Frame.__init__(self, parent, *args, **kwargs)
 
         self._setup_widgets()
-
     def _setup_widgets(self) -> None:
 
         # Directory name setup
@@ -100,7 +103,9 @@ class ConfigCreator(tk.Frame):
         move_to_other_option.place(relx=0.5, rely=0.8, anchor=Anchor.CENTER.value)
 
     def import_config(self) -> None:
-        filedialog.askopenfile()
+        path = filedialog.askopenfile()
+        self.mediator.notify(self, EVENTS.IMP, config_src=path)
 
     def export_config(self) -> None:
-        filedialog.asksaveasfilename()
+        path = filedialog.asksaveasfilename()
+        self.mediator.notify(self, EVENTS.EXP, export_source = path)

@@ -9,6 +9,10 @@ from types import TracebackType
 
 from datetime import datetime
 
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from BaseComponent import BaseComponent
+
 parser = argparse.ArgumentParser()
 parser.add_argument('DEBUG', default=False, nargs='?')
 args = parser.parse_args()
@@ -21,7 +25,7 @@ class Singleton(type):
             cls._instances[cls] = instance
         return cls._instances[cls]
 
-class Logger(metaclass=Singleton):
+class Logger(BaseComponent, metaclass=Singleton):
 
     # Set this when executing a script using DEBUG=True
     DEBUG = args.DEBUG

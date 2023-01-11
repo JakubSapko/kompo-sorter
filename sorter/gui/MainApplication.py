@@ -1,5 +1,7 @@
 import tkinter as tk
-from components.ConfigCreator import ConfigCreator
+
+from .ConfigCreator import ConfigCreator
+from logic.BaseComponent import BaseComponent
 
 WIDTH = 600
 HEIGHT = 600
@@ -7,7 +9,7 @@ POS_X = 300
 POS_Y = 200
 
 
-class MainApplication(tk.Frame):
+class MainApplication(tk.Frame, BaseComponent):
     def __init__(self, parent, *args, **kwargs):
         tk.Frame.__init__(self, parent, *args, **kwargs)
         # root
@@ -32,11 +34,15 @@ class MainApplication(tk.Frame):
         cfg = ConfigCreator(self)
         cfg.grid(row=0, column=0, columnspan=2, sticky="nsew")
 
-        run_btn = tk.Button(self, text="Run script")
+        run_btn = tk.Button(self, text="Run script", command=self._run_script())
         run_btn.place(relx=0.425, rely=0.9)
 
+        stop_btn = tk.Button(self, text="Stop script", command=self._stop_script())
+        stop_btn.place(relx=0.5)
+    def _run_script(self) -> None:
+        pass
+    
+    def _stop_script(self) -> None:
+        pass
 
-if __name__ == "__main__":
-    root = tk.Tk()
-    MainApplication(root).pack(side="top", fill="both", expand=True)
-    root.mainloop()
+
