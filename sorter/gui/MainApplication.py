@@ -34,15 +34,21 @@ class MainApplication(tk.Frame, BaseComponent):
         cfg = ConfigCreator(self)
         cfg.grid(row=0, column=0, columnspan=2, sticky="nsew")
 
-        run_btn = tk.Button(self, text="Run script", command=self._run_script())
-        run_btn.place(relx=0.425, rely=0.9)
+        self.run_btn = tk.Button(self, text="Run script",command=self._run_script)
+        self.run_btn.place(relx=0.33, rely=0.9)
 
-        stop_btn = tk.Button(self, text="Stop script", command=self._stop_script())
-        stop_btn.place(relx=0.5)
+        self.stop_btn = tk.Button(self, text="Stop script", command=self._stop_script)
+        self.stop_btn.place(relx=0.53, rely=0.9)
+        self.stop_btn.config(state='disabled')
+
     def _run_script(self) -> None:
+        self.stop_btn.config(state='active')
+        self.run_btn.config(state='disabled')
         pass
     
     def _stop_script(self) -> None:
+        self.stop_btn.config(state='disabled')
+        self.run_btn.config(state='active')
         pass
 
 

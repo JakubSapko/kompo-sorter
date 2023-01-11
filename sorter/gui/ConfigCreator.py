@@ -57,26 +57,35 @@ class ConfigCreator(tk.Frame, BaseComponent):
         )
 
         # Config list setup
-        config_values = [
-            "Example: [.txt,.pdf,.doc]"
-        ]
-        cnames = StringVar(value=config_values)
-        conifg_listbox: Listbox = Listbox(self, listvariable=cnames, height=6, width=40)
+        names = {"Example": "[.txt,.pdf,.doc]"}
+
+        conifg_listbox: Listbox = Listbox(self, height=6, width=40)
+
+        for key, value in names.items():
+            conifg_listbox.insert(0, f"{key}: {value}")
+
         conifg_listbox.place(relx=0.5, rely=0.43, anchor=Anchor.CENTER.value)
 
+        # Delete selected button setup
+        delete_selected_button: Button = Button(
+            self, text="Delete selected", command=self.delete_selected
+        )
+        delete_selected_button.place(
+            relx=0.5, rely=0.57, anchor=Anchor.CENTER.value
+        )
         # Export config setup
         export_config_button: Button = Button(
             self, text="Export config", command=self.export_config
         )
         export_config_button.place(
-            relx=0.5, rely=0.58, anchor=Anchor.CENTER.value
+            relx=0.39, rely=0.65, anchor=Anchor.CENTER.value
         )
         # Import config setup
         import_config_button: Button = Button(
             self, text="Import config", command=self.import_config
         )
         import_config_button.place(
-            relx=0.5, rely=0.65, anchor=Anchor.CENTER.value
+            relx=0.63, rely=0.65, anchor=Anchor.CENTER.value
         )
         # imported_config = filedialog.askopenfile()
 
@@ -109,3 +118,6 @@ class ConfigCreator(tk.Frame, BaseComponent):
     def export_config(self) -> None:
         path = filedialog.asksaveasfilename()
         self.mediator.notify(self, EVENTS.EXP, export_source = path)
+
+    def delete_selected(self) -> None:
+        pass
