@@ -42,9 +42,12 @@ class SorterMediator(Mediator):
             self._logger.log(f"{sender}: Added {data['dirname']} : {data['extensions']} to config")
             updated_config: Dict[str, str] = self._cfg_handler.add_to_config(data['dirname'], data['extensions'])
             return updated_config
-            
+
         if event == EVENTS.CFG_REM:
-            self._logger.log(f"{sender}: Removed {data['removed_rule']} to config")
+            self._logger.log(f"{sender}: Removed rule at index {data['index']} from config")
+            updated_config: Dict[str, str] = self._cfg_handler.remove_from_config(data['index'])
+            return updated_config
+            
         if event == EVENTS.EXP:
             self._logger.log(f"{sender}: Exported config to {data['export_source']}")
         if event == EVENTS.IMP:

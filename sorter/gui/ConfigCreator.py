@@ -4,6 +4,8 @@ import tkinter as tk
 
 from typing import Dict
 
+import json
+
 from logic.BaseComponent import BaseComponent
 from logic.Mediator import EVENTS
 from logic.ConfigHandler import ConfigHandler
@@ -116,10 +118,25 @@ class ConfigCreator(tk.Frame, BaseComponent):
     def add_to_config(self) -> None:
         dirname: str = self.dir_name_entry.get()
         extensions: str = self.dir_extensions_entry.get()
-        updated_config: Dict[str, str] = self.mediator.notify('ConfigCreator', EVENTS.CFG_ADD, dirname=dirname, extensions=extensions)
+        updated_config: Dict[str, list[str]] = self.mediator.notify('ConfigCreator', EVENTS.CFG_ADD, dirname=dirname, extensions=extensions)
+        
         self.dir_extensions_entry.delete(0, tk.END)
         self.dir_name_entry.delete(0, tk.END)
+        self._clear_listbox()
+
+        self._populate_listbox(updated_config)
+    def delete_selected(self) -> None:
+        selected = self.conifg_listbox.curselection()
+        for index in reversed(selected):
+            updated_config: Dict[str, list[str]] = self.mediator.notify('ConfigCreator', EVENTS.CFG_REM, index=index)
+            #Mozliwa optymalizacja gdyby wyciagnac to poza petle
+            self._clear_listbox()
+            self._populate_listbox(updated_config)
+
+    def _clear_listbox(self) -> None:
         self.conifg_listbox.delete(0, tk.END)
+
+    def _populate_listbox(self, updated_config: Dict[str, list[str]]) -> None:
         for key, value in updated_config.items():
             self.conifg_listbox.insert(0, f"{key}: {value}")
 
@@ -131,6 +148,3 @@ class ConfigCreator(tk.Frame, BaseComponent):
     def export_config(self) -> None:
         path = filedialog.asksaveasfilename()
         self.mediator.notify('ConfigCreator', EVENTS.EXP, export_source = path)
-
-    def delete_selected(self) -> None:
-        pass
