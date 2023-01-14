@@ -2,6 +2,7 @@ from enum import Enum
 from tkinter import Listbox, Radiobutton, StringVar, Entry, Label, Button, filedialog
 import tkinter as tk
 
+from typing import Dict
 
 from logic.BaseComponent import BaseComponent
 from logic.Mediator import EVENTS
@@ -40,8 +41,8 @@ class ConfigCreator(tk.Frame, BaseComponent):
         dir_name: str = StringVar()
         dir_name_label: Label = Label(self, text="Provide a directory to config")
         dir_name_label.place(relx=0.5, rely=0.1, anchor=Anchor.CENTER.value)
-        dir_name_entry: Entry = Entry(self, textvariable=dir_name)
-        dir_name_entry.place(relx=0.5, rely=0.15, anchor=Anchor.CENTER.value)
+        self.dir_name_entry: Entry = Entry(self, textvariable=dir_name)
+        self.dir_name_entry.place(relx=0.5, rely=0.15, anchor=Anchor.CENTER.value)
 
         # Directory extensions setup
         dir_extensions: str = StringVar()
@@ -49,24 +50,23 @@ class ConfigCreator(tk.Frame, BaseComponent):
             self, text="Provide extensions for a given directory"
         )
         dir_extensions_label.place(relx = 0.5, rely=0.2, anchor=Anchor.CENTER.value)
-        dir_extensions_entry: Entry = Entry(self, textvariable=dir_extensions)
-        dir_extensions_entry.place(relx=0.5, rely= 0.25, anchor=Anchor.CENTER.value)
+        self.dir_extensions_entry: Entry = Entry(self, textvariable=dir_extensions)
+        self.dir_extensions_entry.place(relx=0.5, rely= 0.25, anchor=Anchor.CENTER.value)
 
         # Submit button setup
-        submit_button: Button = Button(self, text="Submit")
+        submit_button: Button = Button(self, text="Submit", command=self.add_to_config)
         submit_button.place(
             relx=0.5, rely=0.30, anchor=Anchor.CENTER.value
         )
 
         # Config list setup
-        names = {"Example": "[.txt,.pdf,.doc]"}
 
-        conifg_listbox: Listbox = Listbox(self, height=6, width=40)
+        self.conifg_listbox: Listbox = Listbox(self, height=6, width=40)
 
-        for key, value in names.items():
-            conifg_listbox.insert(0, f"{key}: {value}")
+        # for key, value in names.items():
+        #     conifg_listbox.insert(0, f"{key}: {value}")
 
-        conifg_listbox.place(relx=0.5, rely=0.43, anchor=Anchor.CENTER.value)
+        self.conifg_listbox.place(relx=0.5, rely=0.43, anchor=Anchor.CENTER.value)
 
         # Delete selected button setup
         delete_selected_button: Button = Button(
@@ -113,14 +113,24 @@ class ConfigCreator(tk.Frame, BaseComponent):
         self.other_files_option.set('skip')
         move_to_other_option.place(relx=0.5, rely=0.8, anchor=Anchor.CENTER.value)
 
+    def add_to_config(self) -> None:
+        dirname: str = self.dir_name_entry.get()
+        extensions: str = self.dir_extensions_entry.get()
+        updated_config: Dict[str, str] = self.mediator.notify('ConfigCreator', EVENTS.CFG_ADD, dirname=dirname, extensions=extensions)
+        self.dir_extensions_entry.delete(0, tk.END)
+        self.dir_name_entry.delete(0, tk.END)
+        self.conifg_listbox.delete(0, tk.END)
+        for key, value in updated_config.items():
+            self.conifg_listbox.insert(0, f"{key}: {value}")
+
     def import_config(self) -> None:
         file = filedialog.askopenfile()
-        self.mediator.notify(self, EVENTS.IMP, config_src=file.name)
+        self.mediator.notify('ConfigCreator', EVENTS.IMP, config_src=file.name)
         ConfigHandler.read_config()
 
     def export_config(self) -> None:
         path = filedialog.asksaveasfilename()
-        self.mediator.notify(self, EVENTS.EXP, export_source = path)
+        self.mediator.notify('ConfigCreator', EVENTS.EXP, export_source = path)
 
     def delete_selected(self) -> None:
         pass

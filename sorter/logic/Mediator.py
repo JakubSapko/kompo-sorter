@@ -1,5 +1,6 @@
 from abc import ABC
 from enum import Enum
+from typing import Dict
 
 class EVENTS(Enum):
     CFG_ADD = 'Config add'
@@ -18,12 +19,15 @@ class Mediator(ABC):
         pass
 
 class SorterMediator(Mediator):
-    def __init__(self, gui, cfg, logger, sorter) -> None:
+    def __init__(self, gui, cfg, cfg_handler, logger, sorter) -> None:
         self._gui = gui
         self._gui.mediator = self
 
         self._cfg = cfg
         self._cfg.mediator = self
+
+        self._cfg_handler = cfg_handler
+        self._cfg_handler.mediator = self
 
         self._logger = logger
         self._logger.mediator = self
@@ -35,7 +39,10 @@ class SorterMediator(Mediator):
         data = kwargs
         print(f"keywordy w mediatorze {data=}")
         if event == EVENTS.CFG_ADD:
-            self._logger.log(f"{sender}: Added {data['new_rule']} to config")
+            self._logger.log(f"{sender}: Added {data['dirname']} : {data['extensions']} to config")
+            updated_config: Dict[str, str] = self._cfg_handler.add_to_config(data['dirname'], data['extensions'])
+            return updated_config
+            
         if event == EVENTS.CFG_REM:
             self._logger.log(f"{sender}: Removed {data['removed_rule']} to config")
         if event == EVENTS.EXP:

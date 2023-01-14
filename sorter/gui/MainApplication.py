@@ -2,6 +2,7 @@ import tkinter as tk
 
 from logic.Logger import Logger
 from logic.Sorter import Sorter
+from logic.ConfigHandler import ConfigHandler
 
 from .ConfigCreator import ConfigCreator
 from logic.BaseComponent import BaseComponent
@@ -50,7 +51,8 @@ class MainApplication(tk.Frame, BaseComponent):
     def _setup_mediator(self) -> SorterMediator:
         logger: Logger = Logger()
         sorter: Sorter = Sorter()
-        mediator: SorterMediator = SorterMediator(self, self.cfg, logger, sorter)
+        config_handler: ConfigHandler = ConfigHandler()
+        mediator: SorterMediator = SorterMediator(self, self.cfg, config_handler, logger, sorter)
         return mediator
 
     def _run_script(self) -> None:
