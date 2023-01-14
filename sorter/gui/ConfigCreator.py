@@ -125,6 +125,7 @@ class ConfigCreator(tk.Frame, BaseComponent):
         self._clear_listbox()
 
         self._populate_listbox(updated_config)
+        
     def delete_selected(self) -> None:
         selected = self.conifg_listbox.curselection()
         for index in reversed(selected):

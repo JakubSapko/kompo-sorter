@@ -47,9 +47,11 @@ class SorterMediator(Mediator):
             self._logger.log(f"{sender}: Removed rule at index {data['index']} from config")
             updated_config: Dict[str, str] = self._cfg_handler.remove_from_config(data['index'])
             return updated_config
-            
+
         if event == EVENTS.EXP:
-            self._logger.log(f"{sender}: Exported config to {data['export_source']}")
+            self._logger.log(f"{sender}: Exported config to {data['export_source']}.json")
+            self._cfg_handler.save_config(data['export_source'])
+
         if event == EVENTS.IMP:
             self._logger.log(f"{sender}: Imported config from {data['config_src']}")
         if event == EVENTS.START:

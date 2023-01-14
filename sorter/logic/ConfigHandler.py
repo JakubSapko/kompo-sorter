@@ -1,5 +1,6 @@
 from typing import Dict
 from itertools import islice
+import json
 
 class ConfigHandler:
     config: Dict[str, list[str]] = {}
@@ -18,10 +19,9 @@ class ConfigHandler:
     def _parse_extensions(self, extensions: str):
         return extensions.split(';')
 
-    @staticmethod
     def read_config() -> None:
         print("dupa")
 
-    @staticmethod
-    def save_config() -> None:
-        pass
+    def save_config(self, path: str) -> None:
+        with open(f"{path}.json", "w") as jsonConf:
+            json.dump(self.config, jsonConf)
