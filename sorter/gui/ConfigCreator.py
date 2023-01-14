@@ -5,6 +5,7 @@ import tkinter as tk
 
 from logic.BaseComponent import BaseComponent
 from logic.Mediator import EVENTS
+from logic.ConfigHandler import ConfigHandler
 
 DEFAULT_PADDING_TOP = 15
 DEFAULT_PADDING_BOTTOM = 5
@@ -32,6 +33,7 @@ class ConfigCreator(tk.Frame, BaseComponent):
         tk.Frame.__init__(self, parent, *args, **kwargs)
 
         self._setup_widgets()
+        
     def _setup_widgets(self) -> None:
 
         # Directory name setup
@@ -112,8 +114,9 @@ class ConfigCreator(tk.Frame, BaseComponent):
         move_to_other_option.place(relx=0.5, rely=0.8, anchor=Anchor.CENTER.value)
 
     def import_config(self) -> None:
-        path = filedialog.askopenfile()
-        self.mediator.notify(self, EVENTS.IMP, config_src=path)
+        file = filedialog.askopenfile()
+        self.mediator.notify(self, EVENTS.IMP, config_src=file.name)
+        ConfigHandler.read_config()
 
     def export_config(self) -> None:
         path = filedialog.asksaveasfilename()

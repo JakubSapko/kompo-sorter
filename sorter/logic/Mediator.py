@@ -19,6 +19,9 @@ class Mediator(ABC):
 
 class SorterMediator(Mediator):
     def __init__(self, gui, cfg, logger, sorter) -> None:
+        self._gui = gui
+        self._gui.mediator = self
+
         self._cfg = cfg
         self._cfg.mediator = self
 
@@ -29,15 +32,16 @@ class SorterMediator(Mediator):
         self._sorter.mediator = self
     
     def notify(self, sender: object, event: str, **kwargs) -> None:
-        data = kwargs.items()
+        data = kwargs
+        print(f"keywordy w mediatorze {data=}")
         if event == EVENTS.CFG_ADD:
-            self._logger.log(f"{sender}: Added {data.new_rule} to config")
+            self._logger.log(f"{sender}: Added {data['new_rule']} to config")
         if event == EVENTS.CFG_REM:
-            self._logger.log(f"{sender}: Removed {data.removed_rule} to config")
+            self._logger.log(f"{sender}: Removed {data['removed_rule']} to config")
         if event == EVENTS.EXP:
-            self._logger.log(f"{sender}: Exported config to {data.export_source}")
+            self._logger.log(f"{sender}: Exported config to {data['export_source']}")
         if event == EVENTS.IMP:
-            self._logger.log(f"{sender}: Imported config from {data.config_src}")
+            self._logger.log(f"{sender}: Imported config from {data['config_src']}")
         if event == EVENTS.START:
             self._logger.log(f"{sender}: App started running")
         if event == EVENTS.END:

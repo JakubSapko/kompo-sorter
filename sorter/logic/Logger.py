@@ -9,9 +9,8 @@ from types import TracebackType
 
 from datetime import datetime
 
-from typing import TYPE_CHECKING
-if TYPE_CHECKING:
-    from BaseComponent import BaseComponent
+
+from .BaseComponent import BaseComponent
 
 parser = argparse.ArgumentParser()
 parser.add_argument('DEBUG', default=False, nargs='?')
