@@ -8,20 +8,21 @@ class ConfigHandler:
     def add_to_config(self, dirname: str, extensions: str) -> Dict[str, list[str]]:
         parsed_extensions: list[str] = self._parse_extensions(extensions)
         self.config[dirname] = parsed_extensions
-        print(self.config)
         return self.config
 
     def remove_from_config(self, index: int) -> Dict[str, list[str]]:
         del self.config[next(islice(self.config, index, None))]
-        print(self.config)
         return self.config
 
-    def _parse_extensions(self, extensions: str):
-        return extensions.split(';')
-
-    def read_config() -> None:
-        print("dupa")
+    def read_config(self, path: str) -> Dict[str, list[str]]:
+        with open(path) as json_config:
+            data = json.load(json_config)
+        self.config = data
+        return self.config
 
     def save_config(self, path: str) -> None:
-        with open(f"{path}.json", "w") as jsonConf:
-            json.dump(self.config, jsonConf)
+        with open(f"{path}.json", "w") as json_config:
+            json.dump(self.config, json_config)
+    
+    def _parse_extensions(self, extensions: str):
+        return extensions.split(';')

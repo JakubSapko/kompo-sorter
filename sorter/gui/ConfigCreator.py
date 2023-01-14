@@ -125,7 +125,7 @@ class ConfigCreator(tk.Frame, BaseComponent):
         self._clear_listbox()
 
         self._populate_listbox(updated_config)
-        
+
     def delete_selected(self) -> None:
         selected = self.conifg_listbox.curselection()
         for index in reversed(selected):
@@ -143,9 +143,10 @@ class ConfigCreator(tk.Frame, BaseComponent):
 
     def import_config(self) -> None:
         file = filedialog.askopenfile()
-        self.mediator.notify('ConfigCreator', EVENTS.IMP, config_src=file.name)
-        ConfigHandler.read_config()
-
+        imported_config: Dict[str, list[str]] = self.mediator.notify('ConfigCreator', EVENTS.IMP, config_src=file.name)
+        self._clear_listbox()
+        self._populate_listbox(imported_config)
+        
     def export_config(self) -> None:
         path = filedialog.asksaveasfilename()
         self.mediator.notify('ConfigCreator', EVENTS.EXP, export_source = path)

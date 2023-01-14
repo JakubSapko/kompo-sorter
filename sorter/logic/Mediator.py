@@ -53,7 +53,10 @@ class SorterMediator(Mediator):
             self._cfg_handler.save_config(data['export_source'])
 
         if event == EVENTS.IMP:
-            self._logger.log(f"{sender}: Imported config from {data['config_src']}")
+            self._logger.log(f"{sender}: Imported config from {data['config_src']}.json")
+            imported_config: Dict[str, list[str]] = self._cfg_handler.read_config(data["config_src"])
+            return imported_config
+            
         if event == EVENTS.START:
             self._logger.log(f"{sender}: App started running")
         if event == EVENTS.END:
