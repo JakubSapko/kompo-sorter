@@ -350,3 +350,6 @@
 |INFO     |20:27|ConfigCreator: Added e : f to config
 |INFO     |20:27|ConfigCreator: Removed rule at index c: ['d'] from config
 |INFO     |20:27|ConfigCreator: Removed rule at index e: ['f'] from config
+|INFO     |20:30|ConfigCreator: Added a : b to config
+|INFO     |20:30|ConfigCreator: Added c : d to config
+|INFO     |20:30|ConfigCreator: Removed rule at index c: ['d'] from config

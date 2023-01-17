@@ -1,14 +1,12 @@
 from enum import Enum
-from tkinter import Listbox, Radiobutton, StringVar, Entry, Label, Button, filedialog
+from tkinter import Listbox, StringVar, Entry, Label, Button, filedialog
 import tkinter as tk
 
 from typing import Dict
 
-import json
 
 from logic.BaseComponent import BaseComponent
 from logic.Mediator import EVENTS
-from logic.ConfigHandler import ConfigHandler
 
 DEFAULT_PADDING_TOP = 15
 DEFAULT_PADDING_BOTTOM = 5
@@ -95,25 +93,25 @@ class ConfigCreator(tk.Frame, BaseComponent):
 
         # Other files
         other_files_label: Label = Label(
-            self, text="What do you want to do with files with other extensions?"
+            self, text="Files with unrecognized extensions are put in the 'Other' directory by default. It will be created if it doesn't exist "
         )
         other_files_label.place(
             relx=0.5, rely=0.7, anchor=Anchor.CENTER.value
         )
-        self.other_files_option: StringVar = StringVar()
-        skip_option: Radiobutton = Radiobutton(
-            self, text="Skip the files", variable=self.other_files_option, value="skip"
-        )
-        skip_option.place(relx=0.5, rely=0.75, anchor=Anchor.CENTER.value)
-        move_to_other_option: Radiobutton = Radiobutton(
-            self,
-            variable=self.other_files_option,
-            text='Move to "Other" directory on your Desktop',
-            value="other",
-        )
-        #Set the default behavior to skipping unrecognized files
-        self.other_files_option.set('skip')
-        move_to_other_option.place(relx=0.5, rely=0.8, anchor=Anchor.CENTER.value)
+        # self.other_files_option: StringVar = StringVar()
+        # skip_option: Radiobutton = Radiobutton(
+        #     self, text="Skip the files", variable=self.other_files_option, value="skip"
+        # )
+        # skip_option.place(relx=0.5, rely=0.75, anchor=Anchor.CENTER.value)
+        # move_to_other_option: Radiobutton = Radiobutton(
+        #     self,
+        #     variable=self.other_files_option,
+        #     text='Move to "Other" directory on your Desktop',
+        #     value="other",
+        # )
+        # #Set the default behavior to skipping unrecognized files
+        # self.other_files_option.set('skip')
+        # move_to_other_option.place(relx=0.5, rely=0.8, anchor=Anchor.CENTER.value)
 
     def add_to_config(self) -> None:
         dirname: str = self.dir_name_entry.get()
@@ -128,10 +126,7 @@ class ConfigCreator(tk.Frame, BaseComponent):
 
     def delete_selected(self) -> None:
         selected = self.conifg_listbox.curselection()
-        print(f"{selected=}")
         for index in selected:
-            print(f"{index=}")
-            print(f"{self.conifg_listbox.get(index)=}")
             selected_item: str = self.conifg_listbox.get(index)
             updated_config: Dict[str, list[str]] = self.mediator.notify('ConfigCreator', EVENTS.CFG_REM, index=selected_item)
             #Mozliwa optymalizacja gdyby wyciagnac to poza petle

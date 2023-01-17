@@ -1,8 +1,6 @@
 from typing import Dict
-from itertools import islice
 import json
 from .BaseComponent import BaseComponent
-import ast
 
 class ConfigHandler(BaseComponent):
     config: Dict[str, list[str]] = {}
@@ -15,11 +13,9 @@ class ConfigHandler(BaseComponent):
         self.config[dirname] = parsed_extensions
         return self.config
 
-    def remove_from_config(self, index: str) -> Dict[str, list[str]]:
-        print(f"{self.config=}")
-        selected_item: str = self._parse_directory_name(index)
+    def remove_from_config(self, selected_option: str) -> Dict[str, list[str]]:
+        selected_item: str = self._parse_directory_name(selected_option)
         self.config.pop(selected_item)
-        print(f"Config po usunieciu {self.config=}")
         return self.config
 
     def read_config(self, path: str) -> Dict[str, list[str]]:
