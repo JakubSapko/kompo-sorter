@@ -302,3 +302,51 @@
 |INFO     |17:54|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
 |INFO     |17:54|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
 |INFO     |17:55|MainApplication: App stopped running
+|INFO     |17:56|MainApplication: App started running
+|INFO     |17:56|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |17:56|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |17:56|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |17:56|MainApplication: App stopped running
+|INFO     |18:2|ConfigCreator: Removed rule at index 0 from config
+|INFO     |19:5|ConfigCreator: Added excele : .numbers to config
+|INFO     |19:5|ConfigCreator: Added foty : .png to config
+|INFO     |19:5|ConfigCreator: Removed rule at index 0 from config
+|INFO     |19:6|ConfigCreator: Added foty : .png to config
+|INFO     |19:7|ConfigCreator: Added excele : .numbers to config
+|INFO     |19:7|ConfigCreator: Removed rule at index 1 from config
+|INFO     |19:7|ConfigCreator: Added a : b to config
+|INFO     |19:7|ConfigCreator: Added c : d to config
+|INFO     |19:7|ConfigCreator: Removed rule at index 1 from config
+|INFO     |19:8|ConfigCreator: Added a : b to config
+|INFO     |19:8|ConfigCreator: Added c : d to config
+|INFO     |19:8|ConfigCreator: Removed rule at index 0 from config
+|INFO     |19:9|ConfigCreator: Added a : b to config
+|INFO     |19:9|ConfigCreator: Removed rule at index 0 from config
+|INFO     |19:10|ConfigCreator: Added a : b to config
+|INFO     |19:10|ConfigCreator: Added c : d to config
+|INFO     |19:10|ConfigCreator: Removed rule at index 0 from config
+|INFO     |19:26|ConfigCreator: Added e : f to config
+|INFO     |19:26|ConfigCreator: Removed rule at index 1 from config
+|INFO     |19:27|ConfigCreator: Added a : b to config
+|INFO     |19:27|ConfigCreator: Added c : d to config
+|INFO     |19:28|ConfigCreator: Removed rule at index 1 from config
+|INFO     |19:28|ConfigCreator: Added c : d to config
+|INFO     |19:28|ConfigCreator: Removed rule at index 0 from config
+|INFO     |19:28|ConfigCreator: Added a : b to config
+|INFO     |19:28|ConfigCreator: Added e : f to config
+|INFO     |19:28|ConfigCreator: Added  :  to config
+|INFO     |19:28|ConfigCreator: Removed rule at index 2 from config
+|INFO     |19:35|ConfigCreator: Added a : b to config
+|INFO     |19:35|ConfigCreator: Added c : d to config
+|INFO     |19:35|ConfigCreator: Added e : f to config
+|INFO     |19:35|ConfigCreator: Removed rule at index c: ['d'] from config
+|INFO     |19:43|ConfigCreator: Added a : b to config
+|INFO     |19:43|ConfigCreator: Added c : d to config
+|INFO     |19:43|ConfigCreator: Added e : f to config
+|INFO     |19:43|ConfigCreator: Removed rule at index c: ['d'] from config
+|INFO     |19:44|ConfigCreator: Added foty : .png;.jpeg;.dupa to config
+|INFO     |20:27|ConfigCreator: Added a : b to config
+|INFO     |20:27|ConfigCreator: Added c : d to config
+|INFO     |20:27|ConfigCreator: Added e : f to config
+|INFO     |20:27|ConfigCreator: Removed rule at index c: ['d'] from config
+|INFO     |20:27|ConfigCreator: Removed rule at index e: ['f'] from config

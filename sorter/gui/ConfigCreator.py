@@ -128,8 +128,12 @@ class ConfigCreator(tk.Frame, BaseComponent):
 
     def delete_selected(self) -> None:
         selected = self.conifg_listbox.curselection()
-        for index in reversed(selected):
-            updated_config: Dict[str, list[str]] = self.mediator.notify('ConfigCreator', EVENTS.CFG_REM, index=index)
+        print(f"{selected=}")
+        for index in selected:
+            print(f"{index=}")
+            print(f"{self.conifg_listbox.get(index)=}")
+            selected_item: str = self.conifg_listbox.get(index)
+            updated_config: Dict[str, list[str]] = self.mediator.notify('ConfigCreator', EVENTS.CFG_REM, index=selected_item)
             #Mozliwa optymalizacja gdyby wyciagnac to poza petle
             self._clear_listbox()
             self._populate_listbox(updated_config)
