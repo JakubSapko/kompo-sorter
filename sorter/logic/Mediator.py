@@ -9,6 +9,10 @@ class EVENTS(Enum):
     IMP = 'Config imported'
     START = 'App start'
     END = 'App end'
+    MOVE = 'File moved by sorter'
+    E_MOVE = 'Error when moving'
+    FILE_CREATE = 'File created'
+    FILE_MOVE = 'File was moved'
 
 
 class Mediator(ABC):
@@ -37,7 +41,6 @@ class SorterMediator(Mediator):
     
     def notify(self, sender: object, event: str, **kwargs) -> None:
         data = kwargs
-        print(f"keywordy w mediatorze {data=}")
         if event == EVENTS.CFG_ADD:
             self._logger.log(f"{sender}: Added {data['dirname']} : {data['extensions']} to config")
             updated_config: Dict[str, str] = self._cfg_handler.add_to_config(data['dirname'], data['extensions'])
@@ -56,8 +59,26 @@ class SorterMediator(Mediator):
             self._logger.log(f"{sender}: Imported config from {data['config_src']}.json")
             imported_config: Dict[str, list[str]] = self._cfg_handler.read_config(data["config_src"])
             return imported_config
-            
+
         if event == EVENTS.START:
             self._logger.log(f"{sender}: App started running")
+            cfg: Dict[str, list[str]] = self._cfg_handler._get_sorting_representation()
+            self._sorter._load_config(cfg)
+            self._sorter.run_sort()
+
         if event == EVENTS.END:
             self._logger.log(f"{sender}: App stopped running")
+            self._sorter.stop_sort()
+        
+        if event == EVENTS.MOVE:
+            self._logger.log(f"{sender}: Moved file {data['file']} to {data['destination']}")
+        
+        if event == EVENTS.E_MOVE:
+            self._logger.log(f"{sender}: Error when trying to move {data['file']}")
+        
+        if event == EVENTS.FILE_CREATE:
+            self._logger.log(f"{sender}: A new file {data['path']} was created!\n")
+            self._sorter._sort_file(data['path'])
+        if event == EVENTS.FILE_MOVE:
+            self._logger.log(f"{sender}: A file {data['path']} was moved to desktop!\n")
+            self._sorter._sort_file(data['path'])

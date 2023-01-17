@@ -1,10 +1,14 @@
 from typing import Dict
 from itertools import islice
 import json
+from .BaseComponent import BaseComponent
 
-class ConfigHandler:
+class ConfigHandler(BaseComponent):
     config: Dict[str, list[str]] = {}
 
+    def get_config(self) -> Dict[str, list[str]]:
+        return self.config 
+    
     def add_to_config(self, dirname: str, extensions: str) -> Dict[str, list[str]]:
         parsed_extensions: list[str] = self._parse_extensions(extensions)
         self.config[dirname] = parsed_extensions
@@ -26,3 +30,10 @@ class ConfigHandler:
     
     def _parse_extensions(self, extensions: str):
         return extensions.split(';')
+    
+    def _get_sorting_representation(self) -> Dict[str, str]:
+        temp_dict = {}
+        for dest, extensions in self.config.items():
+            for extension in extensions:
+                temp_dict[extension] = dest
+        return temp_dict

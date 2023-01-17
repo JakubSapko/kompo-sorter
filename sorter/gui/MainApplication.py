@@ -1,13 +1,13 @@
 import tkinter as tk
 
 from logic.Logger import Logger
-from logic.Sorter import Sorter
+from logic.FileHandler import FileHandler
 from logic.ConfigHandler import ConfigHandler
 
 from .ConfigCreator import ConfigCreator
 from logic.BaseComponent import BaseComponent
 
-from logic.Mediator import SorterMediator
+from logic.Mediator import SorterMediator, EVENTS
 
 WIDTH = 600
 HEIGHT = 600
@@ -49,8 +49,8 @@ class MainApplication(tk.Frame, BaseComponent):
         self.stop_btn.config(state='disabled')
     
     def _setup_mediator(self) -> SorterMediator:
-        logger: Logger = Logger()
-        sorter: Sorter = Sorter()
+        logger: Logger = Logger("logs")
+        sorter: FileHandler = FileHandler()
         config_handler: ConfigHandler = ConfigHandler()
         mediator: SorterMediator = SorterMediator(self, self.cfg, config_handler, logger, sorter)
         return mediator
@@ -58,11 +58,11 @@ class MainApplication(tk.Frame, BaseComponent):
     def _run_script(self) -> None:
         self.stop_btn.config(state='active')
         self.run_btn.config(state='disabled')
-        pass
+        self.mediator.notify('MainApplication', EVENTS.START)
     
     def _stop_script(self) -> None:
         self.stop_btn.config(state='disabled')
         self.run_btn.config(state='active')
-        pass
+        self.mediator.notify('MainApplication', EVENTS.END)
 
 

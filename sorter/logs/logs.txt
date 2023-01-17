@@ -1,0 +1,304 @@
+|INFO     |21:21|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |21:21|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |21:21|MainApplication: App started running
+|INFO     |21:21|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:21|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:21|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:21|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:21|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:21|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:21|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:21|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:21|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:21|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:24|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |21:24|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |21:24|MainApplication: App started running
+|INFO     |21:24|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:24|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:24|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:24|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:24|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:24|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:24|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:24|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:24|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:24|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:25|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |21:25|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |21:25|MainApplication: App started running
+|INFO     |21:25|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:25|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:25|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:25|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:25|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:25|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:25|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:25|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:25|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:25|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:26|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |21:26|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |21:26|MainApplication: App started running
+|INFO     |21:26|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:26|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:26|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:26|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:26|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:26|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:26|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:26|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:26|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:26|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:27|MainApplication: App stopped running
+|INFO     |21:27|MainApplication: App started running
+|INFO     |21:27|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:27|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:27|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:27|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:27|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:27|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:27|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:27|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:27|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:27|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:28|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |21:28|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |21:28|MainApplication: App started running
+|INFO     |21:28|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:28|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:28|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:28|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:28|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:28|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:28|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:28|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:28|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:28|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:30|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |21:30|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |21:30|MainApplication: App started running
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/MAD-wzor.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/projekt_1_Szady.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:30|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:31|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |21:31|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |21:31|MainApplication: App started running
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/MAD-wzor.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/projekt_1_Szady.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:31|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:33|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |21:33|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |21:33|MainApplication: App started running
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/MAD-wzor.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/projekt_1_Szady.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:33|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:35|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |21:35|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |21:35|MainApplication: App started running
+|INFO     |21:36|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |21:36|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |21:36|MainApplication: App started running
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/MAD-wzor.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/projekt_1_Szady.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |21:36|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |21:37|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |21:37|MainApplication: App started running
+|INFO     |21:37|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.png to /Users/jakubsapko/Desktop/foty
+|INFO     |21:37|FileHandler: A new file /Users/jakubsapko/Desktop/foty/dupa.png was created!
+
+|INFO     |21:38|MainApplication: App stopped running
+|INFO     |21:38|MainApplication: App started running
+|INFO     |21:38|FileHandler: Moved file /Users/jakubsapko/Desktop/cipa.png to /Users/jakubsapko/Desktop/foty
+|INFO     |7:37|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |7:37|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |7:38|MainApplication: App started running
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/cipa.png to /Users/jakubsapko/Desktop/foty
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.png to /Users/jakubsapko/Desktop/foty
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/MAD-wzor.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/projekt_1_Szady.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:38|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |7:38|FileHandler: A new file /Users/jakubsapko/Desktop/excele/pizda.xlsx was created!
+
+|INFO     |7:42|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |7:42|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |7:42|MainApplication: App started running
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/cipa.png to /Users/jakubsapko/Desktop/foty
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.png to /Users/jakubsapko/Desktop/foty
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/MAD-wzor.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:42|FileHandler: Moved file /Users/jakubsapko/Desktop/projekt_1_Szady.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:42|FileHandler: A new file /Users/jakubsapko/Desktop/.DS_Store was created!
+
+|INFO     |7:42|FileHandler: A file /Users/jakubsapko/Desktop/excele/chuj.xlsx was moved to desktop!
+
+|INFO     |7:48|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |7:48|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |7:48|MainApplication: App started running
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_2984.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/rpis-2-12-2022.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/cipa.png to /Users/jakubsapko/Desktop/foty
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/chuj.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/IMG_3669.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/pizda.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/Z4_Sapko_208499_projekt_pierwszy.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.png to /Users/jakubsapko/Desktop/foty
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/MAD-wzor.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/projekt_1_Szady.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:48|FileHandler: A new file /Users/jakubsapko/Desktop/excele/projekt_1_Szady.numbers was created!
+
+|INFO     |7:48|FileHandler: Error when trying to move /Users/jakubsapko/Desktop/excele/projekt_1_Szady.numbers
+|INFO     |7:48|FileHandler: Moved file /Users/jakubsapko/Desktop/excele/projekt_1_Szady.numbers to /Users/jakubsapko/Desktop/excele
+|INFO     |7:49|FileHandler: A file /Users/jakubsapko/Desktop/excele/dupa.xlsx was moved to desktop!
+
+|INFO     |7:51|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |7:51|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |7:51|MainApplication: App started running
+|INFO     |7:52|FileHandler: A new file /Users/jakubsapko/Desktop/.DS_Store was created!
+
+|INFO     |7:52|FileHandler: A file /Users/jakubsapko/Desktop/foty/dupa.png was moved to desktop!
+
+|INFO     |17:12|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |17:12|ConfigCreator: Added excele : .numbers;.xlsx to config
+|INFO     |17:12|ConfigCreator: Exported config to /Users/jakubsapko/Desktop/test.json
+|INFO     |17:12|MainApplication: App started running
+|INFO     |17:12|FileHandler: Moved file /Users/jakubsapko/Desktop/325373605_3428614277414345_1687523986795852793_n.jpeg to /Users/jakubsapko/Desktop/foty
+|INFO     |17:12|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.png to /Users/jakubsapko/Desktop/foty
+|INFO     |17:12|FileHandler: A new file /Users/jakubsapko/Desktop/Other/test.json was created!
+
+|INFO     |17:12|FileHandler: Error when trying to move /Users/jakubsapko/Desktop/Other/test.json
+|INFO     |17:12|FileHandler: A new file /Users/jakubsapko/Desktop/test.json was created!
+
+|INFO     |17:15|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |17:15|ConfigCreator: Added excele : .png;.jpeg to config
+|INFO     |17:16|ConfigCreator: Exported config to /Users/jakubsapko/Desktop/test.json
+|INFO     |17:16|MainApplication: App started running
+|INFO     |17:16|FileHandler: A new file /Users/jakubsapko/Desktop/Other/test.json was created!
+
+|INFO     |17:16|FileHandler: Error when trying to move /Users/jakubsapko/Desktop/Other/test.json
+|INFO     |17:16|FileHandler: A new file /Users/jakubsapko/Desktop/test.json was created!
+
+|INFO     |17:21|ConfigCreator: Imported config from /Users/jakubsapko/Desktop/test.json.json
+|INFO     |17:21|MainApplication: App started running
+|INFO     |17:29|ConfigCreator: Imported config from /Users/jakubsapko/Desktop/test.json.json
+|INFO     |17:29|MainApplication: App started running
+|INFO     |17:29|FileHandler: A new file /Users/jakubsapko/Desktop/Other/test.json was created!
+
+|INFO     |17:29|FileHandler: Error when trying to move /Users/jakubsapko/Desktop/Other/test.json
+|INFO     |17:29|FileHandler: A new file /Users/jakubsapko/Desktop/.DS_Store was created!
+
+|INFO     |17:30|FileHandler: A file /Users/jakubsapko/Desktop/Zdjęcia/IMG_1690.JPG was moved to desktop!
+
+|INFO     |17:37|ConfigCreator: Imported config from /Users/jakubsapko/Desktop/Other/test.json.json
+|INFO     |17:37|MainApplication: App started running
+|INFO     |17:37|FileHandler: A new file /Users/jakubsapko/Desktop/.DS_Store was created!
+
+|INFO     |17:37|FileHandler: A file /Users/jakubsapko/Desktop/foty/dupa.png was moved to desktop!
+
+|INFO     |17:38|ConfigCreator: Exported config to .json
+|INFO     |17:38|ConfigCreator: Imported config from /Users/jakubsapko/Desktop/Other/test.json.json
+|INFO     |17:38|MainApplication: App started running
+|INFO     |17:38|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.png to /Users/jakubsapko/Desktop/excele
+|INFO     |17:38|FileHandler: A new file /Users/jakubsapko/Desktop/excele/dupa.png was created!
+
+|INFO     |17:38|FileHandler: Error when trying to move /Users/jakubsapko/Desktop/excele/dupa.png
+|INFO     |17:38|FileHandler: Moved file /Users/jakubsapko/Desktop/excele/dupa.png to /Users/jakubsapko/Desktop/excele
+|INFO     |17:38|MainApplication: App stopped running
+|INFO     |17:38|ConfigCreator: Removed rule at index 0 from config
+|INFO     |17:38|ConfigCreator: Removed rule at index 0 from config
+|INFO     |17:38|ConfigCreator: Added excele : .numbers;.xlsx to config
+|INFO     |17:38|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |17:38|MainApplication: App started running
+|INFO     |17:40|ConfigCreator: Imported config from /Users/jakubsapko/Desktop/Other/test.json.json
+|INFO     |17:40|ConfigCreator: Removed rule at index 0 from config
+|INFO     |17:40|ConfigCreator: Imported config from /Users/jakubsapko/Desktop/Other/test.json.json
+|INFO     |17:40|ConfigCreator: Removed rule at index 0 from config
+|INFO     |17:40|ConfigCreator: Removed rule at index 0 from config
+|INFO     |17:40|ConfigCreator: Added excele : .png;.jpeg to config
+|INFO     |17:40|ConfigCreator: Removed rule at index 0 from config
+|INFO     |17:40|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |17:40|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |17:40|MainApplication: App started running
+|INFO     |17:40|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.png to /Users/jakubsapko/Desktop/foty
+|INFO     |17:40|FileHandler: A new file /Users/jakubsapko/Desktop/foty/dupa.png was created!
+
+|INFO     |17:40|FileHandler: Error when trying to move /Users/jakubsapko/Desktop/foty/dupa.png
+|INFO     |17:40|FileHandler: Moved file /Users/jakubsapko/Desktop/foty/dupa.png to /Users/jakubsapko/Desktop/foty
+|INFO     |17:41|FileHandler: A new file /Users/jakubsapko/Desktop/.DS_Store was created!
+
+|INFO     |17:41|FileHandler: A file /Users/jakubsapko/Desktop/excele/dupa.xlsx was moved to desktop!
+
+|INFO     |17:53|ConfigCreator: Imported config from /Users/jakubsapko/Desktop/Other/test.json.json
+|INFO     |17:53|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |17:53|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |17:53|MainApplication: App started running
+|INFO     |17:53|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |17:54|ConfigCreator: Added excele : .xlsx;.numbers to config
+|INFO     |17:54|ConfigCreator: Added foty : .png;.jpeg to config
+|INFO     |17:54|MainApplication: App started running
+|INFO     |17:54|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |17:54|FileHandler: Moved file /Users/jakubsapko/Desktop/dupa.xlsx to /Users/jakubsapko/Desktop/excele
+|INFO     |17:55|MainApplication: App stopped running
